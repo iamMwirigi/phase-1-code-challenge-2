@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 function getCharacters(){
-    fetch("t https://iammwirigi.github.io/phase-1-code-challenge-2/", {
+    fetch(" http://localhost:3000/characters",{
         method: "GET",
         headers:{
             "Content-Type":  "application/json"

@@ -9,14 +9,14 @@ html, body {
 
 .logo{
   text-align: center;
-  background-color: rgb(2, 11, 22);
-  color: rgb(250, 243, 243);
+  background-color: rgb(12, 12, 12);
+  color: rgb(253, 252, 252);
   padding: 0.5em;
 }
 
 #character-bar {
   height: 5vh;
-  background: rgb(29, 8, 102);
+  background: rgb(226, 225, 225);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,8 +44,8 @@ html, body {
 }
 
 input[type="submit"], button {
-  background-color: rgb(49, 109, 179);
-  color: white;
+  background-color: rgb(250, 249, 249);
+  color: rgb(20, 20, 20);
   font-size: 18px;
   border-radius: 6px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;

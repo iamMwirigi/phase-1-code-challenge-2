@@ -1,14 +1,16 @@
-[
+
+{
+  "characters":[
   {
     "id": 1,
-    "name": "Mwirigi",
-    "image": "https://randomfox.ca/images/66.jpg",
+    "name": "Mr. Cute",
+    "image": "https://i.pinimg.com/564x/92/06/bf/9206bf1141552359332a309d10c2415f.jpg",
     "votes": 0
   },
   {
     "id": 2,
     "name": "Mx. Monkey",
-    "image": "https://randomfox.ca/images/103.jpg",
+    "image": "https://i.pinimg.com/564x/aa/2e/93/aa2e933d2d1ed15cdd3aebc3f731dfc4.jpg",
     "votes": 0
   },
   {
@@ -30,3 +32,4 @@
     "votes": 0
   }
 ]
+}
