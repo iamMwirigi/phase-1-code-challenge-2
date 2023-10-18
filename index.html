@@ -1,65 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Flatacuties</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <div class="logo">
+    <h1>Flatacuties</h1>
+  </div>
+
+  <div id="character-bar">
+    <!-- show characters names here -->
+
+  </div>
+
+  <div class="characterInfo">
+    <div id="detailed-info">
+      <p id="name">Character's Name</p>
+      <img
+        id="image"
+        src="assets/dummy.gif"
+        alt="Character's Name"
+      /><!-- display character image here -->
+      <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
+      <form id="votes-form">
+        <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
+        <input type="submit" value="Add Votes" />
+      </form>
+      <button id="reset-btn">Reset Votes</button>
+    </div>
+
+    <!-- Bonus only! Uncomment the elements below when you are ready to work on the bonus deliverables -->
+    <!-- 
+      <h4>Add New Character</h4>
+      <form id="character-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="image-url">Image URL</label>
+          <input type="text" id="image-url" name="image-url" />
+        </div>
+        <input type="submit" value="Add Character" />
+      </form> 
+    -->
+  </div>
+  <script src="src/index.js"></script>
   
 </body>
-</html>
-<html>
-  <head>
-    <title>Flatacuties</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class="logo">
-      <h1>Flatacuties</h1>
-    </div>
-
-    <div id="character-bar">
-      <!-- show characters names here -->
-    </div>
-
-    <div class="characterInfo">
-      <div id="detailed-info">
-        <p id="name">Character's Name</p>
-        <img
-          id="image"
-          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnBsb2ZoM2RkaHVnZzl1Y3VxYXloaHV1cHNjNWR3bzd6czNjZ29vNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/20G9uNqE3K4dRjCppA/giphy.gif"
-          alt="Character's Name"
-        />
-        <img
-        id="image"
-        src="http://bestanimations.com/Animals/Mammals/Cats/Lions/animated-lion-gif-11.gif"
-        alt="characters name"/>
-        <!-- display character image here -->
-        <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
-        <form id="votes-form">
-          <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
-          <input type="submit" value="Add Votes" />
-        </form>
-        <button id="reset-btn">Reset Votes</button>
-      </div>
-
-      <!-- Bonus only! Uncomment the elements below when you are ready to work on the bonus deliverables -->
-      <!-- 
-        <h4>Add New Character</h4>
-        <form id="character-form">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div>
-            <label for="image-url">Image URL</label>
-            <input type="text" id="image-url" name="image-url" />
-          </div>
-          <input type="submit" value="Add Character" />
-        </form> 
-      -->
-    </div>
-    <script src="src/index.js"></script>
-  </body>
 </html>

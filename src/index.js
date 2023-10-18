@@ -1,63 +1,52 @@
-// Declare variables
-const characterBar = document.getElementById('character-bar');
-const characterName = document.getElementById('name');
-const characterImage = document.getElementById('image');
-const voteCount = document.getElementById('vote-count');
-const votesForm = document.getElementById('votes-form');
-const resetButton = document.getElementById('reset-btn');
-const buttons = document.getElementsByTagName('button')
+let chartacters = []
+document.addEventListener("DOMContentLoaded", function(){
+    getCharacters()
+})
 
-//aesthetics
-characterBar.style.backgroundColor = 'pink';
 
-// Fetch data from the server and populate the character bar
-function fetchCharacters() {
-  fetch('http://localhost:3000/characters')
-    .then((response) => response.json())
-    .then((data) => {
-      characterBar.innerHTML = data
-        .map(
-          (character) =>
-            `<button onclick="showCharacterDetails(${character.id})">${character.name}</button>`
-        )
-        .join('');
-    })
-    .catch((error) => console.error('Error fetching characters:', error));
-}
 
-// Show details for a selected character
-function showCharacterDetails(characterId) {
-  fetch(`http://localhost:3000/characters/${characterId}`)
-    .then((response) => response.json())
-    .then((character) => {
-      characterName.textContent = character.name;
-      characterImage.src = character.image;
-      voteCount.textContent = character.votes;
 
-      // Event listener for the votes form
-      votesForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const votesInput = document.getElementById('votes');
-        const votes = parseInt(votesInput.value, 10);
-        if (!isNaN(votes)) {
-          character.votes += votes;
-          voteCount.textContent = character.votes;
-          votesInput.value = ''; // Clear the input
+
+function getCharacters(){
+    fetch("https://my-json-server.typicode.com/Mwirigi/moringa-phase-1-week-2-flatacuties/characters", {
+        method: "GET",
+        headers:{
+            "Content-Type":  "application/json"
         }
-      });
+    }).then(data => data.json())
+    .then( response => {
+        chartacters = [...response]
+        displayCharacters(response)
     })
-    .catch((error) => console.error('Error fetching character details:', error));
-}
-
-// Reset votes for the current character
-function resetVotes() {
-  voteCount.textContent = '0';
 }
 
 
+//displaying the characters on the front-end
+function displayCharacters(characters){
+    const characterbar = document.querySelector("#character-bar")
+    for(character of characters){
+        const span = document.createElement("span"); //create an element for each character
+        span.innerText = character.name;
+        span.setAttribute("id", character.id)
+    
+        span.addEventListener("click", (event)=> {
+            diaplayCharacterDetails(getCharacterById(characters, parseInt(event.target.id)))
+        });
 
-// Add event listeners and fetch characters when the page loads
-window.onload = function () {
-  fetchCharacters();
-  resetButton.addEventListener('click', resetVotes);
-};
+        characterbar.appendChild(span);
+
+        
+    }
+}
+
+function diaplayCharacterDetails(character){
+    const image = document.querySelector("#image");
+    image.src = character.image
+}
+
+function getCharacterById(characters, id){
+    return characters.find((character)=>{ 
+        return character.id === id
+})
+
+}
