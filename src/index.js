@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 function getCharacters(){
-    fetch("https://my-json-server.typicode.com/Mwirigi/moringa-phase-1-week-2-flatacuties/characters", {
+    fetch("t https://iammwirigi.github.io/phase-1-code-challenge-2/", {
         method: "GET",
         headers:{
             "Content-Type":  "application/json"
