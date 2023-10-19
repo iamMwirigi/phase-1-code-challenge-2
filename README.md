@@ -1,10 +1,10 @@
-Flatacuties
-Getting started
+## Flatacuties
+ ## Getting started
 
 Welcome to the Flatacuties project, which is a demonstration of what I have learnt so far, using iteration of Arrays(looping), DOM manipulation, Communication with a server using the fetch API and json-server package.
 Project setup
 
-To run this application:
+## To run this application:
 
     Clone the repository from https://github.com/iamMwirigi/phase-1-code-challenge-2
 . If you see a 404, in the page when trying to clone, kindly ask me to add you to the repository as a contributor.
@@ -16,13 +16,13 @@ To run this application:
     {
       "id": 1,
       "name": "Mr. Cute",
-      "image": "https://thumbs.gfycat.com/EquatorialIckyCat-max-1mb.gif",
+      "image": "https://i.pinimg.com/564x/92/06/bf/9206bf1141552359332a309d10c2415f.jpg",
       "votes": 0
     },
     {
       "id": 2,
       "name": "Mx. Monkey",
-      "image": "https://thumbs.gfycat.com/FatalInnocentAmericanshorthair-max-1mb.gif",
+      "image": "https://i.pinimg.com/564x/aa/2e/93/aa2e933d2d1ed15cdd3aebc3f731dfc4.jpg",
       "votes": 0
     },
     {
@@ -49,7 +49,7 @@ To run this application:
     After everything is installed, run the command json-server -w db.json while in the project directory.
     Open the index.html file in the browser, and start interacting with the application
 
-How to use the application
+## How to use the application
 
     When you open the index.html file in the browser, you should see a list of animals. None is slected at first.
 

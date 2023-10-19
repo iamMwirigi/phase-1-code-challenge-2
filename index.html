@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +7,12 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <div class="logo">e
+  <div class="logo">
     <h1>Flatacuties</h1>
   </div>
 
   <div id="character-bar">
-    <!-- show characters names here --> 
-
+    <!-- Show characters' names here -->
   </div>
 
   <div class="characterInfo">
@@ -24,7 +22,7 @@
         id="image"
         src="assets/dummy.gif"
         alt="Character's Name"
-      /><!-- display character image here -->
+      ><!-- Display character image here -->
       <h4>Total Votes: <span id="vote-count">Character's Votes</span></h4>
       <form id="votes-form">
         <input type="text" placeholder="Enter Votes" id="votes" name="votes" />
@@ -32,18 +30,17 @@
       </form>
       <button id="reset-btn">Reset Votes</button>
     </div>
-
-   
-        </div>
-        <div>
-          <label for="image-url">Image URL</label>
-          <input type="text" id="image-url" name="image-url" />
-        </div>
-        <input type="submit" value="Add Character" />
-      </form> 
-      <label for="name">Name</label>
   </div>
+
+  <div>
+    <label for="image-url">Image URL</label>
+    <input type="text" id="image-url" name="image-url" />
+  </div>
+
+  <form>
+    <input type="submit" value="Add Character" />
+    <label for="name">Name</label>
+  </form>
   <script src="src/index.js"></script>
-  
 </body>
 </html>
