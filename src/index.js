@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function getCharacters() {
-    fetch("http://localhost:3000/characters", {
+    fetch(" http://localhost:3000/characters", {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
